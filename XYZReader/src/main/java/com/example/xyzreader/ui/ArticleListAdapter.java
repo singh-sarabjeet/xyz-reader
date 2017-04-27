@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -105,7 +106,6 @@ public class ArticleListAdapter extends RecyclerView.Adapter<ArticleListAdapter.
         Glide.with(holder.thumbnailView.getContext())
                 .load(mCursor.getString(ArticleLoader.Query.THUMB_URL))
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .dontAnimate()
                 .listener(new RequestListener<String, GlideDrawable>() {
                     @Override
                     public boolean onException(Exception e, String model, Target<GlideDrawable> target, boolean isFirstResource) {
