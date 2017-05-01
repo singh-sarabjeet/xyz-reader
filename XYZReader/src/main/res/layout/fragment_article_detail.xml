@@ -96,7 +96,6 @@
         android:contentDescription="@string/action_share"
         android:elevation="@dimen/fab_elevation"
         android:src="@drawable/ic_share"
-        android:stateListAnimator="@animator/fab_elevation"
         tools:ignore="RtlHardcoded"
         tools:targetApi="lollipop" />
 
